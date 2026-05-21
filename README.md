@@ -1,16 +1,15 @@
-## Hi there 👋
+# AISynca
 
-<!--
-**AISynca/AISynca** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+AISynca is a Chrome extension for sending prompts to multiple AI platforms simultaneously.
 
-Here are some ideas to get you started:
+Supported:
+- ChatGPT
+- Gemini
+- Claude
+- Grok
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Features:
+- Multi-send
+- Model control
+- Split layout
+- File upload
