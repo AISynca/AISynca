@@ -187,6 +187,19 @@ a:hover {
   width: 100%;
 }
 
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
 /* ===== Hero Section ===== */
 .hero {
   position: relative;
@@ -770,6 +783,22 @@ a:hover {
 .email-link:hover {
   color: #FFFFFF;
   text-decoration: underline;
+}
+
+.cta-button-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 32px 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .cta-button-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
 }
 
 /* ===== Legal Pages Style ===== */
