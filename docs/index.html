@@ -26,9 +26,9 @@
   <!-- ===== Hero Section ===== -->
   <header class="hero">
     <div class="container">
-      <h1>One Prompt.<br>Multiple AI Responses.</h1>
+      <h1>Send one prompt to ChatGPT, Gemini, Claude, and Grok at the same time.</h1>
       <p class="lead">
-        Interact with ChatGPT, Gemini, Claude, and Grok simultaneously from a unified workspace using your own accounts.
+        AISynca helps you compare AI responses side by side without copying and pasting between tabs — while using your own AI accounts and subscriptions.
       </p>
       
       <div class="hero-ctas">
@@ -36,50 +36,91 @@
         <a href="#comparison" class="btn btn-secondary btn-large">Compare Free and Premium</a>
       </div>
 
-      <!-- Dashboard Interactive CSS Mockup -->
-      <div class="mockup-container">
-        <div class="mockup-header">
-          <span class="mockup-dot"></span>
-          <span class="mockup-dot"></span>
-          <span class="mockup-dot"></span>
-          <span style="color: #94A3B8; font-size: 11px; margin-left: 8px; font-weight: 500; font-family: sans-serif;">AISynca Split Dashboard</span>
+      <!-- Composite Mockup: Chrome Extension Popup + 4-AI Split Dashboard -->
+      <div class="hero-mockup-composite">
+        <!-- Left: Chrome Extension Popup -->
+        <div class="extension-popup-mockup">
+          <div class="popup-header">
+            <div class="popup-logo-group">
+              <span class="popup-logo-dot"></span>
+              <span class="popup-logo-text">AISynca</span>
+            </div>
+            <span class="logo-badge" style="font-size: 8px; padding: 1px 6px;">v1.0</span>
+          </div>
+          <div class="popup-body">
+            <div class="popup-input-area">
+              <span class="popup-input-placeholder">Write your prompt here...</span><span class="popup-input-cursor"></span>
+            </div>
+            <div class="popup-ai-selector">
+              <div class="popup-ai-option">
+                <span class="popup-checkbox">✓</span>
+                <span>ChatGPT</span>
+              </div>
+              <div class="popup-ai-option">
+                <span class="popup-checkbox">✓</span>
+                <span>Gemini</span>
+              </div>
+              <div class="popup-ai-option">
+                <span class="popup-checkbox">✓</span>
+                <span>Claude</span>
+              </div>
+              <div class="popup-ai-option">
+                <span class="popup-checkbox">✓</span>
+                <span>Grok</span>
+              </div>
+            </div>
+            <div class="popup-send-btn">
+              <span>Send to 4 AIs</span>
+              <span class="popup-send-icon">➔</span>
+            </div>
+          </div>
         </div>
-        <div class="mockup-grid">
-          <div class="mockup-pane">
-            <div class="mockup-pane-header">
-              <span class="mockup-pane-name gemini">Gemini</span>
-              <span class="mockup-badge">✓ Sent</span>
-            </div>
-            <div class="mockup-text-block"></div>
-            <div class="mockup-text-block medium"></div>
-            <div class="mockup-text-block short"></div>
+
+        <!-- Right: 4-AI Split Dashboard -->
+        <div class="dashboard-mockup">
+          <div class="dashboard-header">
+            <span class="dashboard-dot"></span>
+            <span class="dashboard-dot"></span>
+            <span class="dashboard-dot"></span>
+            <span class="dashboard-title">AISynca Split Dashboard</span>
           </div>
-          <div class="mockup-pane">
-            <div class="mockup-pane-header">
-              <span class="mockup-pane-name chatgpt">ChatGPT</span>
-              <span class="mockup-badge">✓ Sent</span>
+          <div class="dashboard-grid">
+            <div class="dashboard-pane">
+              <div class="dashboard-pane-header">
+                <span class="dashboard-pane-name gemini">Gemini</span>
+                <span class="dashboard-badge">✓ Syncing</span>
+              </div>
+              <div class="dashboard-text-block"></div>
+              <div class="dashboard-text-block medium"></div>
+              <div class="dashboard-text-block short"></div>
             </div>
-            <div class="mockup-text-block"></div>
-            <div class="mockup-text-block short"></div>
-            <div class="mockup-text-block medium"></div>
-          </div>
-          <div class="mockup-pane">
-            <div class="mockup-pane-header">
-              <span class="mockup-pane-name claude">Claude</span>
-              <span class="mockup-badge">✓ Sent</span>
+            <div class="dashboard-pane">
+              <div class="dashboard-pane-header">
+                <span class="dashboard-pane-name chatgpt">ChatGPT</span>
+                <span class="dashboard-badge">✓ Syncing</span>
+              </div>
+              <div class="dashboard-text-block"></div>
+              <div class="dashboard-text-block short"></div>
+              <div class="dashboard-text-block medium"></div>
             </div>
-            <div class="mockup-text-block medium"></div>
-            <div class="mockup-text-block"></div>
-            <div class="mockup-text-block short"></div>
-          </div>
-          <div class="mockup-pane">
-            <div class="mockup-pane-header">
-              <span class="mockup-pane-name grok">Grok</span>
-              <span class="mockup-badge">✓ Sent</span>
+            <div class="dashboard-pane">
+              <div class="dashboard-pane-header">
+                <span class="dashboard-pane-name claude">Claude</span>
+                <span class="dashboard-badge">✓ Syncing</span>
+              </div>
+              <div class="dashboard-text-block medium"></div>
+              <div class="dashboard-text-block"></div>
+              <div class="dashboard-text-block short"></div>
             </div>
-            <div class="mockup-text-block"></div>
-            <div class="mockup-text-block short"></div>
-            <div class="mockup-text-block"></div>
+            <div class="dashboard-pane">
+              <div class="dashboard-pane-header">
+                <span class="dashboard-pane-name grok">Grok</span>
+                <span class="dashboard-badge">✓ Syncing</span>
+              </div>
+              <div class="dashboard-text-block"></div>
+              <div class="dashboard-text-block short"></div>
+              <div class="dashboard-text-block"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,20 +157,51 @@
         <!-- Feature 4 -->
         <div class="card feature-card">
           <div class="feature-icon">⚙️</div>
-          <h3>Model and reasoning controls</h3>
+          <h3>Model and reasoning controls<span class="badge-premium">Premium</span></h3>
           <p>AISynca Premium lets you change models, thinking modes, and advanced options for each supported AI platform.</p>
         </div>
         <!-- Feature 5 -->
         <div class="card feature-card">
           <div class="feature-icon">📁</div>
-          <h3>File and image support</h3>
+          <h3>File and image support<span class="badge-premium">Premium</span></h3>
           <p>AISynca Premium supports PDF, Word, Excel, and image uploads, as well as image paste attachments.</p>
         </div>
         <!-- Feature 6 -->
         <div class="card feature-card">
           <div class="feature-icon">⚡</div>
-          <h3>Prompt templates</h3>
+          <h3>Prompt templates<span class="badge-premium">Premium</span></h3>
           <p>AISynca Premium lets you save frequently used prompts and create AI-specific templates for repeated workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How It Works Section ===== -->
+  <section class="section how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2>How it works</h2>
+        <p>Three simple steps to supercharge your multi-AI workflow.</p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Choose AI platforms</h3>
+          <p>Select ChatGPT, Gemini, Claude, and Grok from the AISynca control panel.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Write one prompt</h3>
+          <p>Enter your prompt once instead of copying and pasting it across multiple browser tabs.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Compare responses</h3>
+          <p>View responses side by side in real time, and choose the best answer for your task.</p>
         </div>
       </div>
     </div>
@@ -174,6 +246,9 @@
             <div class="promo-period">Promo rate available until July 31, 2026</div>
           </div>
           <p class="plan-desc">For users who want more control over AI models, files, images, templates, and advanced workflows.</p>
+          <div class="promo-note">
+            Early supporters keep the discounted price while their subscription remains active.
+          </div>
           <ul class="plan-features-list premium">
             <li style="font-weight: 600; color: var(--primary-color);">Everything in Free, plus:</li>
             <li>Upload PDF, Word, Excel, and image files</li>
@@ -194,8 +269,8 @@
   <section class="section" id="comparison">
     <div class="container">
       <div class="section-header">
-        <h2>Detailed Comparison</h2>
-        <p>Compare plans and details to find the option that is right for you.</p>
+        <h2>Plan Comparison</h2>
+        <p>A quick overview of what is included in each AISynca plan.</p>
       </div>
 
       <div class="comparison-table-wrapper">
@@ -209,87 +284,32 @@
           </thead>
           <tbody>
             <tr>
-              <td>Send text prompts</td>
+              <td>Send text prompts to 4 AIs simultaneously</td>
               <td><span class="check-icon">✓</span></td>
               <td><span class="check-icon">✓</span></td>
             </tr>
             <tr>
-              <td>Send to up to 4 AI platforms simultaneously</td>
+              <td>Dashboard / Split / Window layouts</td>
               <td><span class="check-icon">✓</span></td>
               <td><span class="check-icon">✓</span></td>
             </tr>
             <tr>
-              <td>ChatGPT support</td>
+              <td>Use existing AI accounts &amp; subscriptions</td>
               <td><span class="check-icon">✓</span></td>
               <td><span class="check-icon">✓</span></td>
             </tr>
             <tr>
-              <td>Gemini support</td>
-              <td><span class="check-icon">✓</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Claude support</td>
-              <td><span class="check-icon">✓</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Grok support</td>
-              <td><span class="check-icon">✓</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Use existing AI accounts and subscriptions</td>
-              <td><span class="check-icon">✓</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Use existing memories and available AI features</td>
-              <td><span class="check-icon">✓</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Dashboard layout</td>
-              <td><span class="check-icon">✓</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Split layout</td>
-              <td><span class="check-icon">✓</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Window layout</td>
-              <td><span class="check-icon">✓</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>File upload: PDF, Word, Excel, etc.</td>
+              <td>File and image upload</td>
               <td><span class="cross-icon">—</span></td>
               <td><span class="check-icon">✓</span></td>
             </tr>
             <tr>
-              <td>Image file upload</td>
+              <td>Model selection</td>
               <td><span class="cross-icon">—</span></td>
               <td><span class="check-icon">✓</span></td>
             </tr>
             <tr>
-              <td>Paste image attachments</td>
-              <td><span class="cross-icon">—</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Change models for each AI</td>
-              <td><span class="cross-icon">—</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Change thinking / reasoning modes</td>
-              <td><span class="cross-icon">—</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
-            <tr>
-              <td>Advanced AI options</td>
+              <td>Thinking / reasoning controls</td>
               <td><span class="cross-icon">—</span></td>
               <td><span class="check-icon">✓</span></td>
             </tr>
@@ -303,13 +323,12 @@
               <td><span class="cross-icon">—</span></td>
               <td><span class="check-icon">✓</span></td>
             </tr>
-            <tr>
-              <td>Priority support for feature requests</td>
-              <td><span class="cross-icon">—</span></td>
-              <td><span class="check-icon">✓</span></td>
-            </tr>
           </tbody>
         </table>
+      </div>
+      
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="pricing.html#comparison" class="btn btn-secondary" style="font-weight: 700;">View Full Feature Comparison →</a>
       </div>
     </div>
   </section>
