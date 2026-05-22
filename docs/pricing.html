@@ -4,50 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing - AISynca</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<h1>Pricing</h1>
+  <!-- ===== Navigation Bar ===== -->
+  <nav class="navbar">
+    <div class="logo-group">
+      <span class="logo-text">AISynca</span>
+      <span class="logo-badge">v1.0</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://github.com/AISynca/AISynca" class="btn btn-primary" style="padding: 8px 16px; font-size: 13px;">Add to Chrome</a>
+    </div>
+  </nav>
 
-<h2>Free</h2>
-<ul>
-  <li>Up to 2 AI platforms simultaneously</li>
-  <li>Text prompt sending</li>
-  <li>Dashboard / Split / Window layouts</li>
-  <li>Use existing AI accounts, memories, and subscriptions</li>
-</ul>
-<p><strong>Price:</strong> Free</p>
+  <!-- ===== Pricing Page Header ===== -->
+  <header style="text-align: center; padding: 64px 8% 40px; background: linear-gradient(180deg, rgba(99, 102, 241, 0.05) 0%, transparent 100%);">
+    <div class="container">
+      <h1 style="font-size: 44px; font-weight: 800; margin-bottom: 12px;">Simple, Transparent Plans</h1>
+      <p style="color: var(--text-sub); font-size: 16px; max-width: 600px; margin: 0 auto;">
+        Get started for free or unlock the full suite of advanced models, image inputs, reasoning modes, templates, and workflows.
+      </p>
+    </div>
+  </header>
 
-<h2>Pro Early Access</h2>
-<ul>
-  <li>Up to 4 AI platforms simultaneously</li>
-  <li>Model selection</li>
-  <li>Reasoning controls</li>
-  <li>File and image upload</li>
-  <li>Templates</li>
-  <li>Priority feature requests</li>
-</ul>
-<p><strong>Price:</strong> $9.9 / year until July 31</p>
-<p>Early supporters retain discounted pricing while their subscription remains active.</p>
+  <!-- ===== Pricing Section ===== -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="pricing-grid">
+        <!-- Free Plan -->
+        <div class="card pricing-card">
+          <span class="plan-name">AISynca Free</span>
+          <div class="plan-price-box">
+            <span class="price">$0</span>
+          </div>
+          <p class="plan-desc">For users who want to use AISynca for simple multi-AI text workflows.</p>
+          <ul class="plan-features-list">
+            <li>Send text prompts to up to 4 AI platforms simultaneously</li>
+            <li>Support for ChatGPT, Gemini, Claude, and Grok</li>
+            <li>Use your own AI accounts, subscriptions, memories, and available models</li>
+            <li>Dashboard / Split / Window layouts</li>
+            <li>Simple prompt sending from one control panel</li>
+          </ul>
+          <a href="https://github.com/AISynca/AISynca" class="btn btn-secondary btn-block">Start for Free</a>
+        </div>
 
-<h2>Pro</h2>
-<ul>
-  <li>Up to 4 AI platforms simultaneously</li>
-  <li>Use all supported AI integrations</li>
-  <li>Model and reasoning controls</li>
-  <li>File upload</li>
-  <li>Templates</li>
-  <li>Future Pro features</li>
-</ul>
-<p><strong>Price:</strong> $19.9 / year</p>
+        <!-- Premium Plan -->
+        <div class="card pricing-card premium">
+          <span class="plan-name" style="color: var(--primary-color);">AISynca Premium</span>
+          <div class="plan-price-box">
+            <div class="promo-badge">Launch Promo Available</div>
+            <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 8px;">
+              <span class="price">$9.90</span>
+              <span style="color: var(--text-sub); font-size: 14px; font-weight: 500;">/ year</span>
+            </div>
+            <div class="regular-price">Regular Price: $19.90 / year</div>
+            <div class="promo-period">Promo rate available until July 31, 2026</div>
+          </div>
+          <p class="plan-desc">For users who want more control over AI models, files, images, templates, and advanced workflows.</p>
+          <ul class="plan-features-list premium">
+            <li style="font-weight: 600; color: var(--primary-color);">Everything in Free, plus:</li>
+            <li>Upload PDF, Word, Excel, and image files</li>
+            <li>Attach images by paste</li>
+            <li>Change models for each AI</li>
+            <li>Change thinking modes and advanced options</li>
+            <li>Save and use prompt templates</li>
+            <li>Use AI-specific templates</li>
+            <li>Priority support for feature requests</li>
+          </ul>
+          <a href="https://github.com/AISynca/AISynca" class="btn btn-primary btn-block">Upgrade to AISynca Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h2>Why up to four AI platforms?</h2>
-<p>
-AISynca intentionally supports up to four simultaneous AI platforms to maintain readability
-on smaller displays and stable performance across a wide range of devices.
-</p>
+  <!-- ===== FAQ/Context Section ===== -->
+  <section class="section" style="background: #F1F5F9; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+      </div>
 
-<p><a href="index.html">Back to Home</a></p>
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div class="card" style="padding: 24px;">
+          <h3 style="font-size: 16px; margin-bottom: 8px; color: var(--primary-color);">Why up to four AI platforms simultaneously?</h3>
+          <p style="font-size: 14px; color: var(--text-sub); line-height: 1.6;">
+            AISynca intentionally supports up to four simultaneous AI platforms to maintain readability on smaller displays and stable performance across a wide range of devices. Four screens offer a balanced layout that maximizes dashboard real estate without layout shifting.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 24px;">
+          <h3 style="font-size: 16px; margin-bottom: 8px; color: var(--primary-color);">Do I need to pay for each AI platform separately?</h3>
+          <p style="font-size: 14px; color: var(--text-sub); line-height: 1.6;">
+            AISynca works directly with your existing AI accounts and subscriptions. If you use free plans on Gemini and ChatGPT, you don't pay anything to them. If you subscribe to Claude Pro or ChatGPT Plus, AISynca automatically lets you access those paid models and subscriptions directly inside the dashboard, with no extra middleware or API token costs!
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-nav">
+      <a href="pricing.html">Pricing</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <p>© 2026 AISynca. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>

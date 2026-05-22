@@ -3,140 +3,342 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AISynca</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
-    }
-
-    header {
-      margin-bottom: 48px;
-    }
-
-    h1 {
-      font-size: 48px;
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 8px;
-    }
-
-    .tagline {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 16px;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 24px;
-      margin: 24px 0;
-      background: #fafafa;
-    }
-
-    .nav a {
-      margin-right: 16px;
-    }
-
-    footer {
-      margin-top: 56px;
-      padding-top: 24px;
-      border-top: 1px solid #ddd;
-      font-size: 14px;
-    }
-  </style>
+  <title>AISynca - One Prompt. Multiple AI Responses.</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header>
-  <h1>AISynca</h1>
-  <p class="tagline">One prompt. Multiple AI responses.</p>
-  <p>
-    AISynca is a multi-AI workspace that allows users to send prompts to
-    ChatGPT, Gemini, Claude, and Grok simultaneously from a single dashboard.
-  </p>
-  <p>
-    Unlike API-based tools, AISynca works directly with users' own AI accounts
-    and subscriptions. Users can continue using their existing plans, saved
-    memories, available models, and reasoning modes while comparing responses
-    across multiple AI platforms in one place.
-  </p>
-</header>
+  <!-- ===== Navigation Bar ===== -->
+  <nav class="navbar">
+    <div class="logo-group">
+      <span class="logo-text">AISynca</span>
+      <span class="logo-badge">v1.0</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://github.com/AISynca/AISynca" class="btn btn-primary" style="padding: 8px 16px; font-size: 13px;">Add to Chrome</a>
+    </div>
+  </nav>
 
-<section class="card">
-  <h2>Features</h2>
-  <ul>
-    <li>Send one prompt to multiple AI platforms simultaneously</li>
-    <li>Use your own AI accounts, subscriptions, and saved memories</li>
-    <li>Support for ChatGPT, Gemini, Claude, and Grok</li>
-    <li>Model selection and reasoning controls for Pro users</li>
-    <li>File and image upload support for Pro users</li>
-    <li>Dashboard, split, and window layouts</li>
-    <li>Template saving and workflow optimization for Pro users</li>
-  </ul>
-  <p>
-    AISynca is designed to expand over time. Additional AI platforms may be
-    added based on user requests and feedback.
-  </p>
-</section>
+  <!-- ===== Hero Section ===== -->
+  <header class="hero">
+    <div class="container">
+      <h1>One Prompt.<br>Multiple AI Responses.</h1>
+      <p class="lead">
+        Interact with ChatGPT, Gemini, Claude, and Grok simultaneously from a unified workspace using your own accounts.
+      </p>
+      
+      <div class="hero-ctas">
+        <a href="https://github.com/AISynca/AISynca" class="btn btn-primary btn-large">Add to Chrome</a>
+        <a href="#comparison" class="btn btn-secondary btn-large">Compare Free and Premium</a>
+      </div>
 
-<section class="card">
-  <h2>Pricing</h2>
+      <!-- Dashboard Interactive CSS Mockup -->
+      <div class="mockup-container">
+        <div class="mockup-header">
+          <span class="mockup-dot"></span>
+          <span class="mockup-dot"></span>
+          <span class="mockup-dot"></span>
+          <span style="color: #94A3B8; font-size: 11px; margin-left: 8px; font-weight: 500; font-family: sans-serif;">AISynca Split Dashboard</span>
+        </div>
+        <div class="mockup-grid">
+          <div class="mockup-pane">
+            <div class="mockup-pane-header">
+              <span class="mockup-pane-name gemini">Gemini</span>
+              <span class="mockup-badge">✓ Sent</span>
+            </div>
+            <div class="mockup-text-block"></div>
+            <div class="mockup-text-block medium"></div>
+            <div class="mockup-text-block short"></div>
+          </div>
+          <div class="mockup-pane">
+            <div class="mockup-pane-header">
+              <span class="mockup-pane-name chatgpt">ChatGPT</span>
+              <span class="mockup-badge">✓ Sent</span>
+            </div>
+            <div class="mockup-text-block"></div>
+            <div class="mockup-text-block short"></div>
+            <div class="mockup-text-block medium"></div>
+          </div>
+          <div class="mockup-pane">
+            <div class="mockup-pane-header">
+              <span class="mockup-pane-name claude">Claude</span>
+              <span class="mockup-badge">✓ Sent</span>
+            </div>
+            <div class="mockup-text-block medium"></div>
+            <div class="mockup-text-block"></div>
+            <div class="mockup-text-block short"></div>
+          </div>
+          <div class="mockup-pane">
+            <div class="mockup-pane-header">
+              <span class="mockup-pane-name grok">Grok</span>
+              <span class="mockup-badge">✓ Sent</span>
+            </div>
+            <div class="mockup-text-block"></div>
+            <div class="mockup-text-block short"></div>
+            <div class="mockup-text-block"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  <h3>Free</h3>
-  <ul>
-    <li>Up to 2 AI platforms simultaneously</li>
-    <li>Text prompt sending</li>
-    <li>Dashboard / Split / Window layouts</li>
-    <li>Use existing AI accounts, memories, and subscriptions</li>
-  </ul>
+  <!-- ===== Features Section ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Features</h2>
+        <p>Everything you need to compare AI answers efficiently.</p>
+      </div>
 
-  <h3>Pro Early Access</h3>
-  <p>
-    $9.9 / year until July 31. Early supporters retain discounted pricing while
-    their subscription remains active.
-  </p>
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="card feature-card">
+          <div class="feature-icon">⇄</div>
+          <h3>Multi-AI sending</h3>
+          <p>Send one text prompt to up to four AI platforms simultaneously, even with AISynca Free.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="card feature-card">
+          <div class="feature-icon">👤</div>
+          <h3>Existing account support</h3>
+          <p>Continue using your own AI accounts, subscriptions, memories, and available models.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="card feature-card">
+          <div class="feature-icon">⛶</div>
+          <h3>Flexible layouts</h3>
+          <p>Use Dashboard, Split, or Window layouts depending on your workflow.</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="card feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Model and reasoning controls</h3>
+          <p>AISynca Premium lets you change models, thinking modes, and advanced options for each supported AI platform.</p>
+        </div>
+        <!-- Feature 5 -->
+        <div class="card feature-card">
+          <div class="feature-icon">📁</div>
+          <h3>File and image support</h3>
+          <p>AISynca Premium supports PDF, Word, Excel, and image uploads, as well as image paste attachments.</p>
+        </div>
+        <!-- Feature 6 -->
+        <div class="card feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Prompt templates</h3>
+          <p>AISynca Premium lets you save frequently used prompts and create AI-specific templates for repeated workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>Pro</h3>
-  <p>
-    $19.9 / year.
-  </p>
+  <!-- ===== Pricing Section ===== -->
+  <section class="section" id="pricing" style="background: #F1F5F9; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pricing</h2>
+        <p>Choose the plan that fits your productivity requirements.</p>
+      </div>
 
-  <p>
-    <a href="pricing.html">View full pricing</a>
-  </p>
-</section>
+      <div class="pricing-grid">
+        <!-- Free Plan -->
+        <div class="card pricing-card">
+          <span class="plan-name">AISynca Free</span>
+          <div class="plan-price-box">
+            <span class="price">$0</span>
+          </div>
+          <p class="plan-desc">For users who want to use AISynca for simple multi-AI text workflows.</p>
+          <ul class="plan-features-list">
+            <li>Send text prompts to up to 4 AI platforms simultaneously</li>
+            <li>Support for ChatGPT, Gemini, Claude, and Grok</li>
+            <li>Use your own AI accounts, subscriptions, memories, and available models</li>
+            <li>Dashboard / Split / Window layouts</li>
+            <li>Simple prompt sending from one control panel</li>
+          </ul>
+          <a href="https://github.com/AISynca/AISynca" class="btn btn-secondary btn-block">Start for Free</a>
+        </div>
 
-<section class="card">
-  <h2>Contact</h2>
-  <p>
-    Questions, bug reports, feature requests, and requests for additional AI
-    integrations are welcome.
-  </p>
-  <p>
-    Email: <a href="mailto:AISynca.contact@gmail.com">AISynca.contact@gmail.com</a>
-  </p>
-</section>
+        <!-- Premium Plan -->
+        <div class="card pricing-card premium">
+          <span class="plan-name" style="color: var(--primary-color);">AISynca Premium</span>
+          <div class="plan-price-box">
+            <div class="promo-badge">Launch Promo Available</div>
+            <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 8px;">
+              <span class="price">$9.90</span>
+              <span style="color: var(--text-sub); font-size: 14px; font-weight: 500;">/ year</span>
+            </div>
+            <div class="regular-price">Regular Price: $19.90 / year</div>
+            <div class="promo-period">Promo rate available until July 31, 2026</div>
+          </div>
+          <p class="plan-desc">For users who want more control over AI models, files, images, templates, and advanced workflows.</p>
+          <ul class="plan-features-list premium">
+            <li style="font-weight: 600; color: var(--primary-color);">Everything in Free, plus:</li>
+            <li>Upload PDF, Word, Excel, and image files</li>
+            <li>Attach images by paste</li>
+            <li>Change models for each AI</li>
+            <li>Change thinking modes and advanced options</li>
+            <li>Save and use prompt templates</li>
+            <li>Use AI-specific templates</li>
+            <li>Priority support for feature requests</li>
+          </ul>
+          <a href="https://github.com/AISynca/AISynca" class="btn btn-primary btn-block">Upgrade to AISynca Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <div class="nav">
-    <a href="pricing.html">Pricing</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-  </div>
-  <p>© 2026 AISynca</p>
-</footer>
+  <!-- ===== Feature Comparison Table ===== -->
+  <section class="section" id="comparison">
+    <div class="container">
+      <div class="section-header">
+        <h2>Detailed Comparison</h2>
+        <p>Compare plans and details to find the option that is right for you.</p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>AISynca Free</th>
+              <th>AISynca Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Send text prompts</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Send to up to 4 AI platforms simultaneously</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>ChatGPT support</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Gemini support</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Claude support</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Grok support</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Use existing AI accounts and subscriptions</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Use existing memories and available AI features</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Dashboard layout</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Split layout</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Window layout</td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>File upload: PDF, Word, Excel, etc.</td>
+              <td><span class="cross-icon">—</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Image file upload</td>
+              <td><span class="cross-icon">—</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Paste image attachments</td>
+              <td><span class="cross-icon">—</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Change models for each AI</td>
+              <td><span class="cross-icon">—</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Change thinking / reasoning modes</td>
+              <td><span class="cross-icon">—</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Advanced AI options</td>
+              <td><span class="cross-icon">—</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Prompt templates</td>
+              <td><span class="cross-icon">—</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>AI-specific templates</td>
+              <td><span class="cross-icon">—</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>Priority support for feature requests</td>
+              <td><span class="cross-icon">—</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="section" style="padding-bottom: 120px;">
+    <div class="container">
+      <div class="dark-cta-section">
+        <h2>Have questions or need support?</h2>
+        <p>
+          We are actively expanding and polishing AISynca. If you have feature requests, bug reports, or questions about Premium options, please get in touch with us!
+        </p>
+        <a href="mailto:AISynca.contact@gmail.com" class="btn btn-accent btn-large">Email Support</a>
+        <div style="margin-top: 24px; font-size: 13px; color: #64748B;">
+          Contact: <a href="mailto:AISynca.contact@gmail.com" class="email-link">AISynca.contact@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-nav">
+      <a href="pricing.html">Pricing</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <p>© 2026 AISynca. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
