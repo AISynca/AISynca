@@ -347,11 +347,11 @@
         
         <div class="cta-button-group">
           <a href="https://forms.gle/PR7AFyP8JnxLmPhVA" class="btn btn-accent btn-large" target="_blank" rel="noopener noreferrer">Submit a Request</a>
-          <a href="mailto:AISynca.contact@gmail.com" class="btn btn-outline btn-large">Email Support</a>
+          <a href="mailto:AISynca.contact@gmail.com" class="btn btn-outline btn-large" onclick="if (this.getAttribute('data-clicked')) return false; this.setAttribute('data-clicked', 'true'); setTimeout(() => this.removeAttribute('data-clicked'), 1000);">Email Support</a>
         </div>
         
         <div style="margin-top: 24px; font-size: 13px; color: #64748B;">
-          Email: <a href="mailto:AISynca.contact@gmail.com" class="email-link">AISynca.contact@gmail.com</a>
+          Email: <a href="mailto:AISynca.contact@gmail.com" class="email-link" onclick="if (this.getAttribute('data-clicked')) return false; this.setAttribute('data-clicked', 'true'); setTimeout(() => this.removeAttribute('data-clicked'), 1000);">AISynca.contact@gmail.com</a>
         </div>
       </div>
     </div>
